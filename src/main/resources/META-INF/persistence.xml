@@ -4,11 +4,13 @@
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="todos" transaction-type="RESOURCE_LOCAL">
 		<class>org.vdc.eclipselink.jpa.entities.Todo</class>
+		<class>org.vdc.eclipselink.jpa.entities.Employee</class>
+		<class>org.vdc.eclipselink.jpa.entities.Project</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/test?useSSL=false" />
-			<property name="javax.persistence.jdbc.user" value="admin" />
-			<property name="javax.persistence.jdbc.password" value="admin" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://local-dbmaster-01.example.com/test?useSSL=false" />
+			<property name="javax.persistence.jdbc.user" value="mashsol_usr" />
+			<property name="javax.persistence.jdbc.password" value="MdKl1247_qC" />
 
 			<!-- EclipseLink should create the database schema automatically -->
 			<property name="eclipselink.ddl-generation" value="create-tables" />
